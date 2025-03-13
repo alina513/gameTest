@@ -145,6 +145,12 @@ header {
 header nav ul li {
   margin-left: 20px;
 }
+footer li {
+  text-align: center;
+}
+header li {
+  text-align: center;
+}
 
 .header-navigation-link {
   color: #ffffff;
@@ -539,18 +545,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: top 200px right 20px;
   position: relative;
-}
-.play::after {
-  content: "";
-  position: absolute;
-  top: 200px;
-  right: 0px;
-  width: 400px;
-  height: 400px;
-  background-color: rgba(0, 0, 0, 0.5);
-  filter: blur(100px);
-  border-radius: 50px;
-  z-index: -1;
+  z-index: 1;
 }
 .play__title {
   line-height: 123%;
@@ -565,18 +560,14 @@ h2 {
 
 @media (min-width: 768px) {
   .play {
-    background-position: top 60px right 20px;
-  }
-  .play::after {
-    width: 760px;
-    height: 400px;
-    filter: blur(100px);
+    background-size: 60%;
+    background-position: top 100px right 20px;
+    height: 500px;
   }
   .play__button {
     display: block;
     margin-left: 30px;
     margin-top: 150px;
-    z-index: 100;
   }
 }
 @media (min-width: 1200px) {
@@ -584,23 +575,14 @@ h2 {
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
-    height: 800px;
+    height: 500px;
     background-image: url("./public/bg2.webp");
-    background-size: contain;
+    background-size: 40%;
     background-repeat: no-repeat;
     background-position: top 100px right 20px;
     position: relative;
   }
-  .play::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 1200px;
-    height: 800px;
-    filter: blur(50px);
-    border-radius: 50px;
-  }
+  
   .play__title {
     font-size: 30px;
     line-height: 168%;
