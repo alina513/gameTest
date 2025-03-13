@@ -34,10 +34,14 @@
         </ul>
       </nav>
       <div class="header-button-wrapper">
-        <button class="btn btn-login">Iniciar sesión</button>
-        <button class="btn btn-register">Registrarse</button>
+        <button class="btn btn-login" aria-label="Iniciar sesión">
+          Iniciar sesión
+        </button>
+        <button class="btn btn-register" aria-label="Registrarse">
+          Registrarse
+        </button>
       </div>
-      <button class="js-open-menu header-button-open">
+      <button class="js-open-menu header-button-open" aria-label="open menu">
         <svg width="32" height="32">
           <use href="./public/sprite.svg#mobile-menu-open"></use>
         </svg>
@@ -47,7 +51,11 @@
         <div class="mobile-menu-container container">
           <div class="flex">
             <div>
-              <button class="mobile-menu-close js-close-menu" type="button">
+              <button
+                class="mobile-menu-close js-close-menu"
+                type="button"
+                aria-label="close menu"
+              >
                 <svg class="mobile-menu-close-icon" width="32" height="32">
                   <use href="./public/sprite.svg#mobile-menu-close"></use>
                 </svg>
@@ -86,7 +94,9 @@
         <div class="banner">
           <div class="overlay">
             <h2>Bono gratis</h2>
-            <button class="bonus-button">¡Obtén tu bono!</button>
+            <button class="bonus-button" aria-label="Obtén tu bono">
+              ¡Obtén tu bono!
+            </button>
           </div>
         </div>
 
@@ -152,7 +162,9 @@
         <h2 class="play__title">
           ¡Obtén un 100% de bono en tu primer depósito! ¡Regístrate ahora!
         </h2>
-        <button class="bonus-button play__button">¡Juega ahora!</button>
+        <button class="bonus-button play__button" aria-label="¡Juega ahora">
+          ¡Juega ahora!
+        </button>
       </section>
     </main>
 
@@ -203,8 +215,8 @@
         Este sitio web utiliza cookies para garantizar la mejor experiencia.
         <a href="./cookies.html" class="cookie-link">Más información</a>.
       </p>
-      <button id="accept-cookies">Aceptar</button>
-      <button id="reject-cookies">Rechazar</button>
+      <button id="accept-cookies" aria-label="Aceptar">Aceptar</button>
+      <button id="reject-cookies" aria-label="Rechazar">Rechazar</button>
     </div>
 
     <script src="./mobile.js" defer></script>
